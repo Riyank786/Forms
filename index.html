@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://kit.fontawesome.com/4d2de370b3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/modal.css">
+  
+  <title>Device Parameter Management</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="heading-wrapper"><h4 class="heading">Device Parameter Management</h4></div>
+
+    <!-- lists appear here -->
+    <div class="content-wrapper"  id="content-wrapper">
+    </div>
+
+    <div class="add-sub-content">
+      <div class="add-sub-wrapper">
+        <div class="add" onclick="showAddParamModal()"><i class="fa-solid fa-plus"></i></div>  
+        <div class="remove" onclick="removeLastParam()"><i class="fa-solid fa-minus"></i></div>
+      </div>
+    </div>
+    
+    <div class="form-control">
+      <div class="btn-wrapper">
+        <button class="btn cancel">Cancel</button>
+        <button class="btn submit" onclick="submit()">Submit</button>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Add Modal -->
+  <div id="addParamModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" onclick="hideAddParamModal()">&times;</span>
+      <h2>Add Parameter</h2>
+      <input type="text"  class="text-input" id="param-input"><br>
+      <button class="addParamBtn" onclick="addParam()">Add</button>
+    </div>
+  </div>
+
+  <!-- Edit Modal -->
+  <div id="editParamModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" onclick="hideAddParamModal()">&times;</span>
+      <h2>Update Parameter</h2>
+      <input type="text"  class="text-input" id="param-edit-input"><br>
+      <button class="addParamBtn" onclick="updateParam()">Update</button>
+    </div>
+  </div>
+
+  <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+  ></script>
+  <script src="./js/index.js"></script>
+  
+</body>
+</html>
