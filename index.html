@@ -16,6 +16,13 @@
   <div class="container">
     <div class="heading-wrapper"><h4 class="heading">Device Parameter Management</h4></div>
 
+    <div class="devicetyoe-wrapper">
+      <select id="devicetype">
+        <option value="Type 1" selected>Type 1</option>
+        <option value="Type 2">Type 2</option>
+      </select>
+    </div>
+
     <!-- lists appear here -->
     <div class="content-wrapper"  id="content-wrapper">
     </div>
@@ -23,7 +30,7 @@
     <div class="add-sub-content">
       <div class="add-sub-wrapper">
         <div class="add" onclick="showAddParamModal()"><i class="fa-solid fa-plus"></i></div>  
-        <div class="remove" onclick="removeLastParam()"><i class="fa-solid fa-minus"></i></div>
+        <div class="remove" onclick="deleteParam()"><i class="fa-solid fa-minus"></i></div>
       </div>
     </div>
     

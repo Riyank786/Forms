@@ -34,10 +34,10 @@ body{
 
 .container .content-wrapper{
   width: calc(100% - 16px);
-  padding: 8px
+  padding: 8px;
 }
 
-.content-wrapper .content{
+.content-wrapper .content, .devicetyoe-wrapper{
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -45,7 +45,7 @@ body{
   margin: 17px 0px;
 }
 
-.content .parameter{
+.content .parameter, #devicetype{
   width: 70%;
   height:50px;
   border-radius: 100px;
@@ -53,6 +53,11 @@ body{
   display:flex;
   align-items: center;
   padding-left: 12px;
+}
+
+#devicetype{
+  background-color: inherit;
+  cursor: pointer;
 }
 
 .content .para-control{
